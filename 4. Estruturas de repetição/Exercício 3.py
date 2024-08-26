@@ -6,8 +6,7 @@ soma = 0
 
 #Solicitando dados
 for i in range(5):
-    numero = int(input("Digite um número: "))
+    numero = int(input(f"Digite o {i+1}º número "))
     soma = soma + numero
 
-#Calculando
 print(f"Soma dos números: {soma}")
