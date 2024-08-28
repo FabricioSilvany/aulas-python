@@ -15,5 +15,5 @@ media = nota + media / 4
 #Exibindo dados
 print(f"\nMédia: {media}")
 
-#Comandos git:  git add. / git commit -m "" / git push
+#Comandos git:  git add . / git commit -m "" / git push
 
