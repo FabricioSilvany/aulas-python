@@ -25,20 +25,21 @@ for i in range(QUANTIDADE_NOTAS):
     while True:
      notas = float(input(f"Digite a {i + 1}ª nota: "))
 
-#Calculando
      if notas < 0 or notas > 10:
-        print("\nA nota deve ser maior ou igual a 0 e menor que 10!")
+        print("\nA nota deve ser maior ou igual a 0 e menor que 10! \nDigite outra nota")
      else:
-          soma = notas * 3
-          media = soma / QUANTIDADE_NOTAS
+          soma += notas
           break
+#Calculando
 
+media = soma / QUANTIDADE_NOTAS
 
+#Exibindo dados
 print(f"Média {media:.1f}")
 
 if media >= 7:
  print("Aprovado!")
-if media == 5 or media >= 6.9:
+elif media == 5 or media >= 6.9:
  print("Recuperação!")
-if media < 5:
+else:
  print("Reprovado!")
