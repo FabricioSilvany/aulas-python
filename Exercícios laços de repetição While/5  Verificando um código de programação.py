@@ -18,14 +18,15 @@ contador = 0
 
 #Solicitando dados
 while True:
-    promocao = input("Digite o código da promoção: ")
+    promocao = input("\nDigite o código da promoção: ")
     contador += 1
 
     if promocao == "PROMO2024":
         print("Código aceito")
         break
     else:
-        print ("\nCódigo inválido você ainda tem 3 tentativas!")
-    if contador == 0:
-        print("Muitas tentativas erradas,\ntente novamente mais tarde")
+        print (f"Código inválido você tentou {contador} vezes!")
+    if contador == 3:
+        print("\nMuitas tentativas erradas,\ntente novamente mais tarde")
+        break
 
