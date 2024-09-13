@@ -26,7 +26,7 @@ for i in range(10):
     else:
         lista_positivos.append(numero)
 
-#comando len() - retorna a quantidade de elemetnos no vetor/lista.
+#comando len() - retorna a quantidade de elementos no vetor/lista.
 quantidade_negativos = len(lista_negativos)
 
 #comando sum() - retorna a soma dos elementos no vetor/lista.
