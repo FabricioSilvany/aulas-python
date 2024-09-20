@@ -16,19 +16,20 @@ os.system("cls || clear")
 #Entrada
 lista_numeros_positivos_pares = []
 
-for i in range(2):
+for i in range(6):
     while True:
-        print("Digite um número inteiro, positivo e par")
+        print("\nDigite um número inteiro, positivo e par")
         numeros = int(input(f"Digite o {i+1}º número: "))
         os.system("cls || clear")
 
-        if numeros < 0 and numeros % 2 == 0:
+        if numeros > 0 and numeros % 2 == 0:
             lista_numeros_positivos_pares.append(numeros)
+            break
+        else:
+            print("Número inserido inválido!")
         
-#Processamento
-        break
 
 #Saída
 print("----Exibindo dados----")
-for numero in reversed(lista_numeros):
-    print(f"Número inserido: {numero}")
+for i, numero in enumerate(reversed(lista_numeros_positivos_pares)):
+    print(f"{len(lista_numeros_positivos_pares) - i}º número: {numero}")
